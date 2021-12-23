@@ -2,7 +2,7 @@ package level1;
 
 import java.util.Scanner;
 
-public class ProhrammersLevel1_23 {
+public class ProgrammersLevel1_23 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
