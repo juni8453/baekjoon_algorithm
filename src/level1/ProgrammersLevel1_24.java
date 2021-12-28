@@ -46,9 +46,9 @@ public class ProgrammersLevel1_24 {
 // 즉, 배열 내에 인덱스가 붙어있는 숫자 중 같은 숫자 하나를 지우고 return 해줘야 한다.
 
 
-// Todo 다른 풀이
-/*
+// 다른 풀이
 
+/*
 package level1;
 
 import java.util.ArrayList;
