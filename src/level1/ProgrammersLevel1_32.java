@@ -32,10 +32,15 @@ public class ProgrammersLevel1_32 {
         Arrays.sort(lost);
         Arrays.sort(reserve);
 
+        // 키포인트는 여벌을 가져왔던 친구가 도난당하면 그친구는 1벌은 갖게 된다는 것이다.
+        // 즉, 여벌이 도난당하므로 자신이 입을 체육복만 소지한 채 일반 학생이 되어
+        // answer의 값에서 +1 해주어야 한다.
+        // (잃어버린줄 알고 answer 값에서 뺐더니 한 벌 남아있기 때문에 자기는 수업에 나갈 수 있으므로)
+
         // 여벌 체육복을 가져온 학생이 도난당한 경우
-        for(int i=0; i<lost.length; i++){
-            for(int j=0; j<reserve.length; j++){
-                if(lost[i] == reserve[j]){
+        for (int i = 0; i < lost.length; i++) {
+            for (int j = 0; j < reserve.length; j++) {
+                if (lost[i] == reserve[j]) {
                     answer++;
                     lost[i] = -1;
                     reserve[j] = -1;
@@ -44,8 +49,8 @@ public class ProgrammersLevel1_32 {
             }
         }
         // 도난당한 학생에게 체육복 빌려주는 경우
-        for(int i=0; i<lost.length; i++){
-            for(int j=0; j<reserve.length; j++){
+        for (int i = 0; i < lost.length; i++) {
+            for (int j = 0; j < reserve.length; j++) {
                 if((lost[i]-1 == reserve[j]) || (lost[i]+1 == reserve[j])){
                     answer++;
                     reserve[j] = -1;
