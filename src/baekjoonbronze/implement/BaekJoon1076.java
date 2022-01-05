@@ -1,4 +1,4 @@
-package bronze.implement;
+package baekjoonbronze.implement;
 
 import java.io.BufferedReader;
 import java.io.IOException;
