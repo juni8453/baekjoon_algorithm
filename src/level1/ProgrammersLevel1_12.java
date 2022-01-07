@@ -48,17 +48,4 @@ public class ProgrammersLevel1_12 {
 // "try hello world" ->	"TrY HeLlO WoRlD"
 
 
-//        for (int i = 0; i < input.length(); i++) {
-//            System.out.println(input.length());
-//            char ch = input.charAt(i);
 
-//            // 단어의 인덱스가 짝수일 때 ?
-//            if (i % 2 == 0) {
-//            }
-//
-//            // 소문자일 떄,
-//            if (Character.isLowerCase(ch)) {
-//
-//            }
-
-//        }
