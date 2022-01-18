@@ -29,10 +29,6 @@ public class TwoSum {
                     answer[1] = j;
                     break;
                 }
-
-                else {
-                    continue;
-                }
             }
         }
 
