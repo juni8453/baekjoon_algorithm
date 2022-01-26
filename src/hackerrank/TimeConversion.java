@@ -2,7 +2,7 @@ package hackerrank;
 
 import java.io.*;
 
-class Result {
+class Result1 {
     public static String timeConversion(String s) {
         // TODO
         //  받아온 문자열에서 AM인지 PM인지 체크한다. (A라면 오전, P라면 오후)
@@ -32,7 +32,7 @@ public class TimeConversion {
 
         String s = bufferedReader.readLine();
 
-        String result = Result.timeConversion(s);
+        String result = Result1.timeConversion(s);
 
         bufferedWriter.write(result);
         bufferedWriter.newLine();
