@@ -51,6 +51,3 @@ public class ProgrammersLevel1_8 {
         return resultJoin;
     }
 }
-
-
-// n = 118372 -> return = 873211
