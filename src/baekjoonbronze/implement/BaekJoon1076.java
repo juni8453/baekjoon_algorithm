@@ -36,7 +36,6 @@ public class BaekJoon1076 {
     }
 }
 
-// 두 번째 풀이
 
 // package bronze.implement;
 //
