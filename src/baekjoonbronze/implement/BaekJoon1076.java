@@ -27,7 +27,7 @@ public class BaekJoon1076 {
         String a = br.readLine();
         String b = br.readLine();
         String c = br.readLine();
-        
+
         String resultStr = colors.get(a).split("_")[0] + colors.get(b).split("_")[0];
         long resultAnswer = Long.parseLong(resultStr) * Long.parseLong(colors.get(c).split("_")[1]);
 
