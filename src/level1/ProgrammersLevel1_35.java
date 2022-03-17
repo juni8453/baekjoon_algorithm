@@ -43,5 +43,3 @@ public class ProgrammersLevel1_35 {
     }
 }
 
-
-// (n * -1) 양수는 음수로, 음수는 양수로 전환
