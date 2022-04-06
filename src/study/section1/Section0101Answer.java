@@ -1,4 +1,4 @@
-package study;
+package study.section1;
 
 import java.util.Scanner;
 
@@ -26,7 +26,7 @@ public class Section0101Answer {
 //        }
 
         // 향상된 for 문으로 풀기 (뒤에는 배열,컬렉션이 올 수 있으므로 배열로 바꾸고 진행)
-        // a.toCharArray() == a.split("")
+        // a.toCharArray() 은 char[] 이지 String[] 은 아니다 !
         for (char x : a.toCharArray()) {
             if (x == b) {
                 answer++;
