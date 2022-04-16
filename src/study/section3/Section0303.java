@@ -36,14 +36,17 @@ public class Section0303 {
             }
         }
 
-        // 창문을 하나 만들자
+        // k 만큼의 창을 만들고 그 내부 값들을 모조리 더해놓는다.
         for (int i = 0; i < k; i++) {
             sum += arr[i];
         }
         result = sum;
 
         // 창문을 한 칸씩 밀고 나간다.
+        // arr = {10, 20, 30, 40, 50} , sum = 60
         for (int i = k; i < n; i++) {
+            // -> 60 += (40 - 10)
+            // -> 90 += (50 - 20) ...
             sum += (arr[i] - arr[i-k]);
             result = Math.max(result, sum);
         }
