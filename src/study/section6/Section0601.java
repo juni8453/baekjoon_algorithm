@@ -35,9 +35,8 @@ public class Section0601 {
 
             // 추가) 정렬하다 앞 인덱스 값이 뒷 인덱스 값에서 -1 값과 같다면 이미 정렬되어 있는거니까 그냥 지나가주도록 ..
             // 추가 검증 필요) 96, 97, 96 과 같은 상황 Validation 필요 (이 때 넘어가면 안됨;)
+            // 삭제부분
 //             if (location != 0 && line[location] == line[location - 1] + 1) {
-//                 if () {
-//                 }
 //                 continue;
 //             }
 
