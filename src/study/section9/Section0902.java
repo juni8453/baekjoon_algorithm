@@ -51,8 +51,6 @@ public class Section0902 {
         int count = 0; // 1, 2, 3
 
         for (Conference conference : arr) {
-
-
             if (conference.startTime >= firstEndConferenceTime) {
                 firstEndConferenceTime = conference.endTime;
                 count ++;

@@ -18,7 +18,7 @@ class Body implements Comparable<Body> {
     // 그냥 외우는게 편하다.
     // 자기자신 - 인자 = 오름차순
     // 인자 - 자기자신 = 내림차순
-      @Override
+    @Override
     public int compareTo(Body body) {
         return body.high - this.high;
     }
