@@ -17,10 +17,6 @@ class Conference implements Comparable<Conference> {
     // 자기 - 오는거 는 오름차순
     // 오는거 - 자기 는 내림차순 (걍 외우셈)
     // 정렬 기준은기준은 알아서
-//    @Override
-//    public int compareTo(Conference conference) {
-//        return this.endTime - conference.endTime;
-//    }
 
 
     @Override
