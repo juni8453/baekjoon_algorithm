@@ -56,7 +56,3 @@ public class Section0401 {
         return answer;
     }
 }
-
-// 15
-// B A C B A C C A C C A C C B D E D E
-// C 당선
