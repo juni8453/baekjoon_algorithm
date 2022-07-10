@@ -8,25 +8,47 @@ import java.util.*;
 public class Section0403 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
+        StringTokenizer st1 = new StringTokenizer(br.readLine());
 
-        int n = Integer.parseInt(st.nextToken());
-        int k = Integer.parseInt(st.nextToken());
+        int n = Integer.parseInt(st1.nextToken());
+        int k = Integer.parseInt(st1.nextToken());
 
-        List<Integer> answers = solution(n, k);
+        StringTokenizer st2 = new StringTokenizer(br.readLine());
+        int[] arr = new int[n];
+
+        for (int i=0; i<n; i++) {
+            arr[i] = Integer.parseInt(st2.nextToken());
+        }
+
+        List<Integer> answers = solution(arr, n, k);
 
         answers.forEach(s -> System.out.print(s + " "));
 
     }
 
-    // n - 7
-    // k - 4
-    private static List<Integer> solution(int n, int k) {
+    private static List<Integer> solution(int[] arr, int n, int k) {
         List<Integer> answers = new ArrayList<>();
-        Map<Integer, Integer> map = new HashMap<>();
-        int[] arr = new int[n];
+        Map<Integer, Integer> window = new HashMap<>();
 
+        int lt = 0;
 
+        // TODO : 최초 윈도우 설정
+        for (int i = 0; i < k - 1; i++) {
+            window.put(arr[i], window.getOrDefault(arr[i], 0) + 1);
+        }
+
+        // RT 를 끝 최초 윈도우 맨 끝 부분 부터 하나 씩 증가시키기 위해서 i = rt, i < n 으로 반복문 설정
+        for (int rt = k - 1; rt < n; rt++) {
+            window.put(arr[rt], window.getOrDefault(arr[rt], 0) + 1);
+            answers.add(window.size());
+            window.put(arr[lt], window.get(arr[lt]) - 1);
+
+            if (window.get(arr[lt]) == 0) {
+                window.remove(arr[lt]);
+            }
+
+            lt ++;
+        }
 
         return answers;
     }
