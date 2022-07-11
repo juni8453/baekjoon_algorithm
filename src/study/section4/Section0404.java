@@ -1,41 +1,56 @@
 package study.section4;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 public class Section0404 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        Scanner sc = new Scanner(System.in);
-        String a = sc.next(); // S 문자열
-        String t = sc.next(); // T 단어 -> T 단어는 S 문자열보다 길이가 작거나 같다.
+        String s = br.readLine();
+        String t = br.readLine();
 
-        int solution = solution(a, t);
+        int answer = solution(s, t);
 
-        System.out.println(solution);
+        System.out.println(answer);
     }
 
-    private static int solution(String a, String t) {
-        int answer = 0;
+    private static int solution(String s, String t) {
+        int count = 0;
+        int lt = 0;
+        int rt = t.length() - 1;
+
         Map<Character, Integer> aMap = new HashMap<>();
         Map<Character, Integer> bMap = new HashMap<>();
 
-        // 윈도우 생성
         for (char x : t.toCharArray()) {
-            aMap.put(x, aMap.getOrDefault(x, 0) + 1);
-        }
-
-        // 윈도우와 비교할 bMap 셋팅
-        for (char x : a.toCharArray()) {
             bMap.put(x, bMap.getOrDefault(x, 0) + 1);
         }
 
-        if (aMap.equals(bMap)) {
-            answer ++;
+        for (int i = 0; i < rt; i++) {
+            aMap.put(s.charAt(i), aMap.getOrDefault(s.charAt(i), 0) + 1);
         }
 
-        return answer;
+        for (int i = rt; i < s.length(); i++) {
+            aMap.put(s.charAt(i), aMap.getOrDefault(s.charAt(i), 0) + 1);
+
+            if (aMap.equals(bMap)) {
+                count ++;
+            }
+
+            aMap.put(s.charAt(lt), aMap.get(s.charAt(lt)) - 1);
+
+            if (aMap.get(s.charAt(lt)) == 0) {
+                aMap.remove(s.charAt(lt));
+            }
+
+            lt ++;
+        }
+
+        return count;
     }
 }
 
@@ -46,7 +61,3 @@ public class Section0404 {
 * {b a c} {a c b} {c b a}
 * output = 3
 * */
-
-// for (char c : aChars) {
-// aMap.put(c, aMap.getOrDefault(c, 0) + 1);
-// }
