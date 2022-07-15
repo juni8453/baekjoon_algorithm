@@ -20,12 +20,13 @@ public class Section0403 {
         }
 
         List<Integer> answer = solution(arr, n, k);
-        answer.stream().forEach(s -> System.out.println(s + " "));
+        answer.stream().forEach(s -> System.out.print(s + " "));
     }
 
     private static List<Integer> solution(int[] arr, int n, int k) {
         int lt = 0;
         int rt = k - 1;
+//        int rt = k;
         Map<Integer, Integer> map = new HashMap<>();
         List<Integer> answer = new ArrayList<>();
 
