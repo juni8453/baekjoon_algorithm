@@ -32,7 +32,7 @@ public class Section0501Review {
 
             // 닫힌 괄호를 만나면, stack 의 맨 위 열린 괄호를 pop() 해준다.
             // pop() 하기 전에, stack 길이를 확인해야 한다.
-            // 모든 탐색이 끝나고 stack 길이를 확인해 size == 0 이라면 YES, 아니라면 NO 를 반환한다.
+            // 모든 탐색이 끝나고 stack 길이를 확인해 size == 0 이라면 YES, 아니라면 괄호가 남아있는 경우니 NO 를 반환한다.
             } else {
                 if (stack.size() != 0) {
                     stack.pop();
@@ -43,9 +43,6 @@ public class Section0501Review {
         }
 
         // 올바른 조건이 아닌 괄호 분기문을 모두 통과하면 해당 괄호는 올바른 괄호이므로, 그대로 YES 반환
-        if (stack.size() != 0) {
-            answer = "NO";
-        }
         return answer;
     }
 }
