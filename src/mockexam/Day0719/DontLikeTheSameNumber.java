@@ -1,4 +1,4 @@
-package mockexam.stak0719;
+package mockexam.Day0719;
 
 import java.io.IOException;
 import java.util.Arrays;
