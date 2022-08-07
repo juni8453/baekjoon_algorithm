@@ -5,8 +5,8 @@ public class DFS0704 {
     static int length = 10;
 
     public static void main(String[] args) {
-        for (int i = 0; i < length; i++) {
-            int dfs = DFS(i);
+        for (int depth = 0; depth < length; depth++) {
+            int dfs = DFS(depth);
             System.out.println(dfs + " ");
         }
     }
