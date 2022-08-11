@@ -30,8 +30,6 @@ public class Section0805 {
         System.out.println(answerCount);
     }
 
-    // 재귀 함수를 호출하며 거슬러줘야하는 금액과 재귀의 합이 같을 때
-    // answerCount 의 값과 depth 를 비교하여 더 작은 값으로 교체
     private static void DFS(int depth, int sum) {
 
         // 계산할 필요가 없는 부분 체크 후 바로 탈출하도록 설정

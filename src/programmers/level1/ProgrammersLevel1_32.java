@@ -1,7 +1,6 @@
-package level1;
+package programmers.level1;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class ProgrammersLevel1_32 {
     public static void main(String[] args) {

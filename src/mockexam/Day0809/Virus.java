@@ -18,7 +18,6 @@ public class Virus {
         node = Integer.parseInt(br.readLine());
         edge = Integer.parseInt(br.readLine());
 
-        // 노드가 1부터 시작하기 때문에 +1
         arr = new int[node + 1][node + 1];
         visited = new boolean[node + 1];
 
