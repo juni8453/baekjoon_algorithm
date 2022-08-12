@@ -1,4 +1,4 @@
-package book.implement;
+package this_is_coding_test.implement;
 
 import java.util.Arrays;
 
@@ -37,8 +37,7 @@ public class UpDownLeftRight {
                 }
             }
 
-            int[] answer = {x, y};
-            return answer;
+            return new int[]{x, y};
         }
     }
 }

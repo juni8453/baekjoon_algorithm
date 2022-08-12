@@ -1,4 +1,4 @@
-package book.greedy;
+package this_is_coding_test.greedy;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package book.greedy;
+package this_is_coding_test.greedy;
 
 public class RuleOfBigNumber {
     public static void main(String[] args) {
