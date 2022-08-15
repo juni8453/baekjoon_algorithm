@@ -1,13 +1,9 @@
 package study.section9;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class Section0902 {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-
+        // 백준 실버1 1931 문제와 동일
     }
 }
