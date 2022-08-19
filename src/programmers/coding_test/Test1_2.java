@@ -32,9 +32,9 @@ public class Test1_2 {
              window.put(discount[i], window.getOrDefault(discount[i], 0) + 1);
          }
 
-//         if (wantMap.equals(window)) {
-//            answer ++;
-//         }
+         if (wantMap.equals(window)) {
+            answer ++;
+         }
 
          // 초기 윈도우를 하나 씩 전진시키면서 want[] 와 비교한다.
          for (int i = 10; i < discount.length; i++) {

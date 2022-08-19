@@ -46,10 +46,8 @@ public class Test1_1 {
                     }
                 // 키도 같고 value 도 같다면,
                 } else {
-                    if (xMap.get(key).equals(yMap.get(key))) {
-                        for (int i = 0; i < xMap.get(key); i++) {
-                            list.add(key);
-                        }
+                    for (int i = 0; i < xMap.get(key); i++) {
+                        list.add(key);
                     }
                 }
             }
