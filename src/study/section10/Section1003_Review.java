@@ -9,25 +9,19 @@ public class Section1003_Review {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        System.out.println(new Solution3_1().solution(n));
-    }
-}
-
-class Solution3_1 {
-    public int solution(int n) throws IOException {
-        int answer = 0;
         int[] arr = new int[n];
         int[] dy = new int[n];
-        dy[0] = 1; // 다이나믹 배열[0] 초기화
+        int answer = 0;
+        dy[0] = 1;
 
         BufferedReader br2 = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br2.readLine());
-
+        StringTokenizer st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
-        for (int i = 1; i < arr.length; i++) {
+        // LIS 알고리즘 작성
+        for (int i = 1; i < n; i++) {
             int max = 0;
 
             for (int j = i - 1; j >= 0; j--) {
@@ -39,7 +33,7 @@ class Solution3_1 {
             answer = Math.max(answer, dy[i]);
         }
 
-        return answer;
+        System.out.println(answer);
     }
 }
 
