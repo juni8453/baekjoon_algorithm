@@ -34,15 +34,13 @@ class Solution3_1 {
             map.put(cloth[1], map.getOrDefault(cloth[1], 0) + 1); // headgear - 2, eye - 1
         }
 
-        // 모든 경우의 수 구하기
+        // 모든 경우의 수 구하기 (곱의 법칙 a * b)
         List<Integer> mapValues = new ArrayList<>(map.values());
         for (int value : mapValues) {
             answer *= value + 1;
         }
 
         // 아무 것도 안입을 수는 없으므로 경우의 수 하나 빼주기
-        answer -= 1;
-
-        return answer;
+        return answer - 1;
     }
 }
