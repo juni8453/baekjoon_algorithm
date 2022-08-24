@@ -28,10 +28,15 @@ class Solution2 {
             strings[i] = String.valueOf(numbers[i]);
         }
 
-        // 문자열 내림차순 정렬
-        Arrays.sort(strings, (o1, o2) ->
-            (o2 + o1).compareTo(o1 + o2)
-        );
+        // 오름차순 공식을 쓰되 매개변수 순서를 바꿔 내림차순으로 변경한다.
+        Arrays.sort(strings, (o2, o1) -> {
+            if (o1.charAt(0) > o2.charAt(0)) return 1;
+            else if (o1.charAt(0) < o2.charAt(0)) return -1;
+            else {
+                // 맨 앞자리 수가 같은 수를 비교해서 넣어줘야 한다. 3 , 30-> 330 이 나오도록
+                return (o1 + o2).compareTo(o2 + o1);
+            }
+        });
 
         // 모든 문자열 숫자가 0인 경우
         // 하나라도 0 이 아니였다면 정렬 후 첫 번째 인덱스가 0일 수가 없어서 이렇게 처리
