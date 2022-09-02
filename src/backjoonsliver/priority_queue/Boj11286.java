@@ -1,4 +1,4 @@
-package backjoonsliver;
+package backjoonsliver.priority_queue;
 
 import java.io.BufferedReader;
 import java.io.IOException;

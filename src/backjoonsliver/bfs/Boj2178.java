@@ -1,4 +1,4 @@
-package backjoonsliver.part2;
+package backjoonsliver.bfs;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -52,7 +52,7 @@ public class Boj2178 {
         Queue<Point> queue = new LinkedList<>();
         queue.offer(new Point(1, 1));
 
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             Point tmp = queue.poll();
 
             for (int i = 0; i < 4; i++) {

@@ -1,4 +1,4 @@
-package backjoonsliver;
+package backjoonsliver.sliding_twoPointer;
 
 import java.io.*;
 import java.util.ArrayList;

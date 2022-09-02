@@ -1,4 +1,4 @@
-package backjoonsliver.part2;
+package backjoonsliver.dfs;
 
 import java.io.BufferedReader;
 import java.io.IOException;
