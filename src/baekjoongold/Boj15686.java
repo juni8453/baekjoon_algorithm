@@ -60,11 +60,12 @@ public class Boj15686 {
             int sum = 0;
             for (Point home : homes) { // 기준 집
                 int dis = Integer.MAX_VALUE;
-                for (int i : combi) { // 살아남은 치킨 집들 (하나의 조합) 과 비교
+                // 살아남은 치킨 집들 (하나의 조합) 과 비교
+                for (int i : combi) {
                     // 기준 집과 가장 거리가 짧은 치킨집과의 거리는 ?
                     dis = Math.min(dis, Math.abs(home.x - chickens.get(i).x) + Math.abs(home.y - chickens.get(i).y));
                 }
-                sum += dis; // 살아남은 치킨집들의 각 조합과 기준 집에서의 거리를 모두 합한 값 = 치킨 거리
+                sum += dis; // 살아남은 치킨집들의 각 조합에서 기준 집에서의 거리를 모두 합한 값 = 치킨 거리
             }
             answer = Math.min(answer, sum); // 이제 각 조합의 치킨 거리 중 가장 짧은 치킨 거리를 구해주면 된다.
 
