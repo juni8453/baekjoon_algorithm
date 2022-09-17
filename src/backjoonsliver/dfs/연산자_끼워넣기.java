@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Boj14888 {
+public class 연산자_끼워넣기 {
     static int MAX = Integer.MIN_VALUE;
     static int MIN = Integer.MAX_VALUE;
     static int[] operator = new int[4]; // 연산자 갯수
