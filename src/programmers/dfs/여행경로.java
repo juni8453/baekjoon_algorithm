@@ -1,4 +1,4 @@
-package programmers.bfs;
+package programmers.dfs;
 
 import java.util.*;
 
@@ -23,7 +23,7 @@ public class 여행경로 {
     }
 }
 
-class Solution1 {
+class Solution4 {
 
     static boolean[] checked;
     static List<String> list = new ArrayList<>();
