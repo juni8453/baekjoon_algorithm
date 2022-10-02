@@ -18,8 +18,8 @@ public class 여행경로 {
             {"ATL", "SFO"}
         };
 
-//        System.out.println(Arrays.toString(new Solution1().solution(tickets)));
-        System.out.println(Arrays.toString(new Solution1().solution(tickets2)));
+        System.out.println(Arrays.toString(new Solution4().solution(tickets)));
+        System.out.println(Arrays.toString(new Solution4().solution(tickets2)));
     }
 }
 
