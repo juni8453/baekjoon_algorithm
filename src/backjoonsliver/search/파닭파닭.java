@@ -1,4 +1,4 @@
-package backjoonsliver.etc;
+package backjoonsliver.search;
 
 import java.io.BufferedReader;
 import java.io.IOException;
