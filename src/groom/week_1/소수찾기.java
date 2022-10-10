@@ -18,7 +18,7 @@ public class 소수찾기 {
 
         int sum = 0;
         for (int i = 0; i < n; i++) {
-            if (isPrime(arr[i])) {
+            if (isPrime(i + 1)) {
                 sum += arr[i];
             }
         }
