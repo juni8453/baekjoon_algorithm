@@ -21,10 +21,10 @@ public class ROT13 {
                     char ch = split[i].charAt(j);
 
                     // 대문자라면
-                    if ((int) ch < 90 && (int) ch > 65) {
+                    if ((int) ch <= 90 && (int) ch >= 65) {
                         // 만약 ch = B 였다면 index = 1
                         int index = ch - 'A';
-                        if (index >= 13) {
+                        if (index > 13) {
                             index -= 13;
                             System.out.print(bigApb[index]);
                         } else {
@@ -32,7 +32,7 @@ public class ROT13 {
                         }
 
                     // 소문자라면
-                    } else {
+                    } else if ((int) ch <= 122 && (int) ch >= 97) {
                         int index = ch - 'a';
                         if (index >= 13) {
                             index -= 13;
