@@ -50,6 +50,7 @@ public class 최소비용_구하기 {
 
         distance = new int[nodeIdx + 1];
         Arrays.fill(distance, Integer.MAX_VALUE);
+        distance[startNodeIdx] = 0;
 
         PriorityQueue<Node2> q = new PriorityQueue<>(Comparator.comparingInt(o -> o.cost));
         q.offer(new Node2(startNodeIdx, 0));
