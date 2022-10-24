@@ -11,13 +11,6 @@ public class IOIO {
         int length = Integer.parseInt(br.readLine()); // s 의 길이
         String s = br.readLine(); // 문자열 s
 
-        /**
-         * 1 <= n <= 1_000_000
-         * 2n + 1 <= length <= 1_000_000
-         */
-
-        // 1. 유형 파악 (슬라이딩 윈도우 풀이 시도) -> 서브태스트 50점
-
         // 2. 풀이 시작
         // n 의 수에 따라 IOI 를 만들어준다.
         StringBuilder sb = new StringBuilder();
