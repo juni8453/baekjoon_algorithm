@@ -7,8 +7,8 @@ import java.util.StringTokenizer;
 
 public class 배열_돌리기1 {
 
-    static int[] dx = {0, 1, 0, -1};
-    static int[] dy = {1, 0, -1, 0}; // 하 우 상 좌 (반시계 방향 맞춤)
+    static int[] dx = {0, 1, 0, -1}; // 반시계 방향으로 숫자를 옮기기 위해 시계 방향으로 라인을 탐색하면서 반시계 방향으로 서로 숫자를 변경한다.
+    static int[] dy = {1, 0, -1, 0};
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
