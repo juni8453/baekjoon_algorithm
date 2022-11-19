@@ -1,4 +1,4 @@
-package programmers.etc;
+package programmers.etc.dev_matching_pratice;
 
 import java.util.Arrays;
 import java.util.HashMap;
