@@ -24,6 +24,21 @@ class Solution {
         return answer;
     }
 
+    public void DFS(String standardWord, String target, String[] word, int depth) {
+        if (target.equals(standardWord)) {
+            answer = depth;
+
+        } else {
+            for (int i = 0; i < word.length; i++) {
+                if (checkDiff(standardWord, word[i]) && !checked[i]) {
+                    checked[i] = true;
+                    DFS(word[i], target, word, depth + 1);
+                    checked[i] = false;
+                }
+            }
+        }
+    }
+
     // 두 문자가 바꿀 수 있는 문자인지 확인하는 메소드
     public boolean checkDiff(String a, String b) {
         int count = 0;
@@ -42,20 +57,5 @@ class Solution {
         }
 
         return true;
-    }
-
-    public void DFS(String standardWord, String target, String[] word, int depth) {
-        if (target.equals(standardWord)) {
-            answer = depth;
-
-        } else {
-            for (int i = 0; i < word.length; i++) {
-                if (checkDiff(standardWord, word[i]) && !checked[i]) {
-                    checked[i] = true;
-                    DFS(word[i], target, word, depth + 1);
-                    checked[i] = false;
-                }
-            }
-        }
     }
 }
