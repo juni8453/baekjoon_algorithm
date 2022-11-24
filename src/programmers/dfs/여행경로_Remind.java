@@ -26,6 +26,7 @@ class Solution9 {
     static List<String> list = new ArrayList<>();
 
     public String[] solution(String[][] tickets) {
+        String[] answer;
         length = tickets.length;
         sTickets = tickets;
         checked = new boolean[length];
@@ -34,7 +35,8 @@ class Solution9 {
 
         Collections.sort(list);
 
-        return list.get(0).split(" ");
+        answer = list.get(0).split(" ");
+        return answer;
     }
 
     // 다른 DFS 완전탐색 문제보다 아이디어가 요구되는 문제.
@@ -51,7 +53,7 @@ class Solution9 {
                 // 방문하지 않았으며 다음 여행경로의 출발지를 찾아준다.
                 if (!checked[i] && start.equals(sTickets[i][0])) {
                     checked[i] = true;
-                    dfs(depth + 1, sTickets[i][1], path + "," + sTickets[i][1]);
+                    dfs(depth + 1, sTickets[i][1], path + " "  + sTickets[i][1]);
                     checked[i] = false;
                 }
             }
