@@ -24,7 +24,7 @@ class Solution6 {
         checked = new boolean[alphabet.length];
         DFS(0, "");
         Collections.sort(list);
-        answer = list.indexOf(word) + 1; // 인덱스 번호기 때문에 +1
+        answer = list.indexOf(word) + 1; 
 
         return answer;
     }
@@ -34,7 +34,7 @@ class Solution6 {
             return;
         }
 
-        for (int i = 0; i < alphabet.length; i++) { // 총 5개의 알파벳으로 확산되기 떄문에 5번 반복
+        for (int i = 0; i < alphabet.length; i++) {
             list.add(str + alphabet[i]);
             DFS(depth + 1, str + alphabet[i]);
         }
