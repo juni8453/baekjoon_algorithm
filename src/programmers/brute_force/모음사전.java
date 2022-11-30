@@ -24,7 +24,7 @@ class Solution6 {
         checked = new boolean[alphabet.length];
         DFS(0, "");
         Collections.sort(list);
-        answer = list.indexOf(word) + 1; 
+        answer = list.indexOf(word) + 1;
 
         return answer;
     }
