@@ -2,7 +2,7 @@ package programmers.sort;
 
 import java.util.Arrays;
 
-public class HIndex_Review {
+public class HIndex {
     public static void main(String[] args) {
         int[] citations = {3, 0, 6, 1, 5};
         int[] test = {2, 3, 4, 5, 5, 6, 6};

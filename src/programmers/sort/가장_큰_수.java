@@ -2,7 +2,7 @@ package programmers.sort;
 
 import java.util.Arrays;
 
-public class LargestNumber {
+public class 가장_큰_수 {
     public static void main(String[] args) {
         int[] numbers = {6, 10, 2};
         int[] numbers2 = {3, 30, 34, 5, 9};
