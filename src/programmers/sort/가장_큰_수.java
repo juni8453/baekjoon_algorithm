@@ -51,5 +51,3 @@ class Solution2 {
         return answer.toString();
     }
 }
-
-// numbers 배열의 순서를 재배치해 만들 수 있는 가장 큰 수를 문자열로 바꿔 return 하는 프로그램을 작성하라.
