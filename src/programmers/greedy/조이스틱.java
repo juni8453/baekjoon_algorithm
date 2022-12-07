@@ -3,8 +3,10 @@ package programmers.greedy;
 public class 조이스틱 {
     public static void main(String[] args) {
         String name = "JEOAAAE";
+        String name2 = "JAN";
 
         System.out.println(new Solution4().solution(name));
+        System.out.println(new Solution4().solution(name2));
     }
 }
 
